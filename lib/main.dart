@@ -17,11 +17,10 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: const Color.fromARGB(255, 22, 20, 20),
+        scaffoldBackgroundColor: const Color.fromARGB(255, 26, 25, 25),
         bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           backgroundColor: Colors.black,
           type: BottomNavigationBarType.fixed,

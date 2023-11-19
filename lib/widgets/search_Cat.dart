@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 
 class SearchCategory extends StatelessWidget {
@@ -18,14 +20,13 @@ class SearchCategory extends StatelessWidget {
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 8, left: 5),
-                child: Container(
+                child: SizedBox(
                  height: 90,
-                 width: 80,
-                  // padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 12),
-                  // alignment: Alignment.topCenter,
+                 width: 75,
                   child: Text(
                     text, 
                     maxLines: 2,
@@ -40,9 +41,9 @@ class SearchCategory extends StatelessWidget {
                   ..rotateX(0.0)
                   ..rotateY(0.0)
                   ..rotateZ(0.2),
-                child: Container(
+                child: SizedBox(
                   height: 90,
-                  width: 66,
+                  width: 72,
                   child: Stack(
                     children: [
                       Positioned(
@@ -54,8 +55,8 @@ class SearchCategory extends StatelessWidget {
                             borderRadius: BorderRadius.circular(10),
                              child: 
                              Image(image: image,
-                               width: 60,
-                              height: 60,
+                               width: 70,
+                              height: 70,
                               ),
                             ),
                         ),

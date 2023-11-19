@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:spotify/views/home.dart';
 import 'package:spotify/views/library.dart';
-
 import '../views/search.dart';
 
 class Tabbar extends StatefulWidget {
@@ -24,9 +24,10 @@ class _TabbarState extends State<Tabbar> {
           });
         },
       items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-        BottomNavigationBarItem(icon: Icon(Icons.search_outlined), label: 'Search'),
+        BottomNavigationBarItem(icon: Icon(Ionicons.home), label: 'Home'),
+        BottomNavigationBarItem(icon: Icon(AntDesign.search1), label: 'Search'),
         BottomNavigationBarItem(icon: Icon(Icons.library_music_rounded), label: 'Your Library'),
+        
       ]),
       body: Stack(
         children: [

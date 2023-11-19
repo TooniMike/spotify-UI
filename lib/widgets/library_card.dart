@@ -25,7 +25,7 @@ class LibraryCard extends StatelessWidget {
             )
             );
             },
-      child: Container(
+      child: SizedBox(
         width: double.infinity,
         child: Row(
           children: [

@@ -17,7 +17,7 @@ class SongCard extends StatelessWidget {
             )
             );
             },
-      child: Container(
+      child: SizedBox(
         width: 140,
         child: Column(
           children: [
@@ -27,8 +27,7 @@ class SongCard extends StatelessWidget {
             ),
             Text(
               'Bad Bunny, Drake, Justin Bieber, Taylor Swift, Ed Sheeran',
-              style: Theme.of(context).textTheme.bodyLarge,
-              // softWrap: true,
+              style: Theme.of(context).textTheme.bodyLarge,              
               overflow: TextOverflow.ellipsis,
               maxLines: 2,
             )

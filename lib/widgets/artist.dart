@@ -9,7 +9,7 @@ class Artists extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){},
-      child: Container(
+      child: SizedBox(
         width: double.infinity,
         child: Row(
           children: [

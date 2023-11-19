@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:spotify/widgets/song_card.dart';
 import '../widgets/album_card.dart';
 import '../widgets/button.dart';
@@ -40,11 +41,11 @@ class _HomeViewState extends State<HomeView> {
                     const SizedBox(width: 20,),
                    const  Row(
                       children: [
-                        Icon(Icons.notification_add_outlined),
+                        Icon(Ionicons.notifications_outline),
                         SizedBox(width: 25,),
                         Icon(Icons.history),
                         SizedBox(width: 25,),
-                        Icon(Icons.settings),
+                        Icon(Ionicons.settings_outline),
                       ],
                       )
                   ],
@@ -76,7 +77,7 @@ class _HomeViewState extends State<HomeView> {
                             children: [
                               RowAlbumCard(label: 'Top 50 Global', image: AssetImage('assets/top50.jpg'),),
                               SizedBox(width: 10,),
-                              RowAlbumCard(label: 'Playlist 3', image: AssetImage('assets/album12.jpg'),),
+                              RowAlbumCard(label: 'Hip Hop', image: AssetImage('assets/album12.jpg'),),
                             ],
                           ),
                           SizedBox(height: 10,),
@@ -101,7 +102,7 @@ class _HomeViewState extends State<HomeView> {
               const SizedBox(height: 25,),
                Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: Text('Recently Played', 
+                child: Text('Your Albums', 
                 style: Theme.of(context).textTheme.titleLarge,
                 ),
               ),
@@ -111,11 +112,11 @@ class _HomeViewState extends State<HomeView> {
                 padding: EdgeInsets.all(16),
                 child: Row(
                   children: [
-                    AlbumCard(label: 'Best Mode', image: AssetImage('assets/album02.jpg'),
+                    AlbumCard(label: 'Timeless', image: AssetImage('assets/timeless.jpg'),
                     
                     ),
                     SizedBox(width: 16,),
-                    AlbumCard(label: 'Motivation Mix', image: AssetImage('assets/album01.jpg'),
+                    AlbumCard(label: 'I Told Them ', image: AssetImage('assets/burna.jpg'),
                     
                     ),
                     SizedBox(width: 16,),
@@ -123,25 +124,24 @@ class _HomeViewState extends State<HomeView> {
                     
                     ),
                     SizedBox(width: 16,),
-                    AlbumCard(label: 'Gospel hits', image: AssetImage('assets/album09.jpg'),
+                    AlbumCard(label: 'OCEANS', image: AssetImage('assets/album07.jpg'),
                     
                     ),
                     SizedBox(width: 16,),
-                    AlbumCard(label: 'R&B', image: AssetImage('assets/album07.jpg'),
+                    AlbumCard(label: 'R&B', image: AssetImage('assets/album09.jpg'),
 
                     ),
                   ],
                 ),
               ),
-              const SizedBox(height: 10),
               
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 16),
                     child: Text(
-                      'Based on your recent listening',
+                      'Your top mixes',
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
                   ),
@@ -200,7 +200,7 @@ class _HomeViewState extends State<HomeView> {
                   )
                 ],
               ),
-              const SizedBox(height: 30),
+              const SizedBox(height: 10),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

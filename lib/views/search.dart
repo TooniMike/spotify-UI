@@ -45,7 +45,7 @@ class _SearchViewState extends State<SearchView> {
                       ),
                       borderRadius: BorderRadius.circular(5),
                     ),
-                    width: double.infinity,
+                    width: MediaQuery.of(context).size.width,
                     height: 50,
                     child: Row(
                       children: [
@@ -78,6 +78,7 @@ class _SearchViewState extends State<SearchView> {
                           
                           const SizedBox(height: 10,),
                           const Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             SearchCategory(color: Colors.green, image: AssetImage('assets/album02.jpg'), text: 'Made For You',),
